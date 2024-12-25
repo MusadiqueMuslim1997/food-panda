@@ -6,6 +6,10 @@
     <title>Food-panda</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
@@ -15,6 +19,7 @@
   </head>
   <body>
     <section class="head">
+      <nav>
       <div class="logo">
         <img src="images/logo.png" alt="" />
       </div>
@@ -26,22 +31,41 @@
         </div>
         <div class="mark"><i class="fa-solid fa-cart-shopping font"></i></div>
       </div>
+    </nav>
     </section>
     <section class="container">
-        <div class="main">
-    <section class="hero">
-        <div class="search-bar">
-            <div class="search-content">It's the food and groceries you love, delivered</div>
-            <div class="search-box">
-                <div class="search-inp"><input type="text" placeholder="Your street and street number"><span><i class="fa-solid fa-location-crosshairs pink"></i> Locate me</span></div>
-            
-                <button>Find Food</button>
+      <div class="main">
+        <section class="hero">
+          <div class="search-bar">
+            <div class="search-content">
+              It's the food and groceries you love, delivered
             </div>
-           
-        </div>
-        <div class="img"><img src="images/refresh-hero-home-pk.webp" alt=""></div>
+            <div class="search-box">
+              <div class="search-inp">
+                <input
+                  type="text"
+                  placeholder="Your street and street number"
+                /><a class="size"
+                  href="https://www.google.com/maps?q=31.5204,74.3587"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i> Locate Me
+                </a>
+              </div>
+
+              <button>Find Food</button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="images/panda.png" alt="" />
+          </div>
+        </section>
+
+        <section class="container">
+         <div class="p-food">You prepare the food, we handle the rest</div>
+        </section>
+      </div>
+
     </section>
-</div>
-</section>
   </body>
 </html>
