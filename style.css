@@ -19,7 +19,6 @@
 nav {
   width: 100%;
   height: 65px;
-  
   background-color: white;
   display: flex;
   align-items: center;
@@ -72,22 +71,25 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px;
-  
+  padding: 20px 0px;
+  flex-wrap: wrap;
+
   /* padding: 40px 80px; */
+}
+.gray {
   background-color: #ececec;
 }
 .main {
   width: 100%;
+  margin-top: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
- 
 }
 .hero {
   width: 100%;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -100,7 +102,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  
+
   /* background-color: #e21b70; */
 }
 .img {
@@ -177,9 +179,9 @@ a {
   color: #e21b70;
 }
 .p-food {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +190,67 @@ a {
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: bolder;
+}
+.food-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e21b70;
+}
+.food-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.white {
+  background-color: white !important;
+}
+.margin {
+  margin-top: 60px;
+}
+.food-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 280px;
+  height: 220px;
+}
+.card img {
+  width: 280px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card img:hover {
+  filter: brightness(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px); 
+}
+.city-name {
+ 
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1550px) {
   nav,
@@ -219,11 +282,13 @@ a {
 }
 
 @media screen and (max-width: 1250px) {
-  nav,.hero{
-   width:1000px;
-   padding: 40px;
+  nav,
+  .hero {
+    width: 1000px;
+    padding: 40px;
   }
-  .search-content {
+  .search-content,
+  .p-food {
     font-size: 1.5rem;
   }
   .search-inp {
@@ -242,16 +307,31 @@ a {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width:950px){
-  .hero{
+@media screen and (max-width: 950px) {
+  .main {
+    margin-top: 60px;
+  }
+  .hero {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-direction: column-reverse;
   }
-  .search-bar,.img{
+  .search-bar,
+  .img {
     width: 100%;
   }
-  .img img{
+  .img img {
     width: 80%;
+  }
+  .search-content {
+    width: 100%;
+    text-align: center;
+  }
+  .food-card {
+    justify-content: space-around;
+  }
+  .card {
+    width: 220px;
+    height: 180px;
   }
 }
